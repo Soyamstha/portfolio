@@ -115,7 +115,7 @@ export function ProjectsSection() {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-4 right-4 flex space-x-2 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute top-4 right-4 flex space-x-2 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Button size="sm" variant="secondary" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4" />
