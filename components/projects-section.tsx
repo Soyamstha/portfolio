@@ -22,7 +22,7 @@ const projects = [
     title: "Lookscart",
     description:
       "Lookscart is a modern e-commerce platform for buying glasses, built with Next.js (frontend) and Laravel (backend). It features product browsing, search & filter, cart management, secure checkout, and order tracking. The Laravel backend provides REST APIs for authentication, product & order management, while the Next.js frontend delivers a fast, SEO-friendly shopping experience",
-    image: "/lookscart.png",
+    image: "/Lookscart.png",
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "PHP", "Laravel", "MySQL"],
     github: "https://github.com/Soyamstha",
     live: "#",
