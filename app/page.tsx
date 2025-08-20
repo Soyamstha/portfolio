@@ -27,7 +27,7 @@ export default function Home() {
 
       <footer className="bg-muted/50 py-8 text-center">
         <div className="container mx-auto px-4">
-          <p className="text-muted-foreground">© 2024 Portfolio. Built with Next.js and Tailwind CSS.</p>
+          <p className="text-muted-foreground">Portfolio. Built with Next.js and Tailwind CSS.</p>
         </div>
       </footer>
     </main>
