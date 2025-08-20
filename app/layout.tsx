@@ -16,9 +16,8 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio - Creative Developer",
-  description: "Modern portfolio showcasing creative development work with smooth animations",
-  generator: "v0.app",
+  title: "Portfolio - Full Stack Developer",
+  description: "Modern portfolio showcasing Full Stack development work with smooth animations",
 }
 
 export default function RootLayout({

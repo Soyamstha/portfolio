@@ -13,6 +13,8 @@ const skills = [
   "JavaScript",
   "PHP",
   "React",
+  "Next.js",
+  "Typescript",
   "Tailwind CSS",
   "Java (Swing, AWT, Event Handling, DBMS)",
   "Laravel",
