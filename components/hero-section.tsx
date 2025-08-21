@@ -72,25 +72,31 @@ export function HeroSection() {
               href="https://github.com/Soyamstha"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub profile"
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transform duration-200"
             >
               <Github className="h-6 w-6" />
             </a>
+
             <a
               href="https://linkedin.com/in/soyam-shrestha"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transform duration-200"
             >
               <Linkedin className="h-6 w-6" />
             </a>
+
             <a
               href="mailto:shrestha.soyam111@gmail.com"
+              aria-label="Send email to Soyam Shrestha"
               className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transform duration-200"
             >
               <Mail className="h-6 w-6" />
             </a>
           </div>
+
 
           <div className="mt-8 text-sm text-muted-foreground">
             <p>📍 Bhaktapur, Nepal | 📞 +977 9745328043</p>

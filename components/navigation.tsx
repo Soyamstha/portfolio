@@ -83,12 +83,13 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" onClick={toggleTheme} className="p-2">
+            <Button aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"} variant="ghost" size="sm" onClick={toggleTheme} className="p-2">
               {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
 
             {/* Mobile Menu Button */}
             <Button
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
               variant="ghost"
               size="sm"
               className="md:hidden p-2"
