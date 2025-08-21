@@ -30,13 +30,15 @@ export function HeroSection() {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden pt-16">
+    <header className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden pt-16">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div
-          className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+          className={`transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}
         >
           <div className="mb-8">
             <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6">
@@ -52,7 +54,9 @@ export function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Soyam Shrestha
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-foreground">Full Stack Developer</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-foreground">
+            Full Stack Developer
+          </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto font-serif">
             Crafting dynamic web applications with modern technologies and innovative solutions
           </p>
@@ -67,6 +71,7 @@ export function HeroSection() {
             </Button>
           </div>
 
+          {/* Social links with sr-only text for accessibility */}
           <div className="flex justify-center space-x-6">
             <a
               href="https://github.com/Soyamstha"
@@ -96,7 +101,7 @@ export function HeroSection() {
               <span className="sr-only">Send email to Soyam Shrestha</span>
             </a>
           </div>
-          
+
           <div className="mt-8 text-sm text-muted-foreground">
             <p>📍 Bhaktapur, Nepal | 📞 +977 9745328043</p>
           </div>
@@ -107,6 +112,6 @@ export function HeroSection() {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-muted-foreground" />
       </div>
-    </section>
+    </header>
   )
 }
