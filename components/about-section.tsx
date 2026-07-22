@@ -89,7 +89,7 @@ export function AboutSection() {
               <h3 className="text-xl font-semibold mb-4">Education:</h3>
               <div className="space-y-2">
                 <p className="text-muted-foreground">
-                  <strong>Bachelor in Information Technology</strong> - Purbanchal University (2021-present)
+                  <strong>Bachelor in Information Technology</strong> - Purbanchal University (2021-2026)
                 </p>
                 <p className="text-muted-foreground">
                   <strong>+2 Science</strong> - United College (2019-2021)

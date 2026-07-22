@@ -1,32 +1,34 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Moon, Sun, Menu, X } from "lucide-react"
-import { useState, useEffect } from "react"
+import { Button } from "@/components/ui/button";
+import { Moon, Sun, Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export function Navigation() {
-  const [isDark, setIsDark] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [mounted, setMounted] = useState(false)
+  const [isDark, setIsDark] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
 
   useEffect(() => {
-    setMounted(true)
-    const isDarkMode = document.documentElement.classList.contains("dark")
-    setIsDark(isDarkMode)
-  }, [])
+    setMounted(true);
+    const isDarkMode = document.documentElement.classList.contains("dark");
+    setIsDark(isDarkMode);
+  }, []);
 
   const toggleTheme = () => {
-    if (!mounted) return
-    document.documentElement.classList.toggle("dark")
-    setIsDark(!isDark)
-  }
+    if (!mounted) return;
+    document.documentElement.classList.toggle("dark");
+    setIsDark(!isDark);
+  };
 
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "Projects", href: "#projects" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
-  ]
+  ];
 
   if (!mounted) {
     return (
@@ -48,6 +50,13 @@ export function Navigation() {
               ))}
             </div>
             <div className="flex items-center space-x-4">
+              <a
+                href="/Soyam_Shrestha_Resume.pdf"
+                download
+                className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition"
+              >
+                Download Resume
+              </a>
               <Button variant="ghost" size="sm" className="p-2">
                 <Moon className="h-4 w-4" />
               </Button>
@@ -58,7 +67,7 @@ export function Navigation() {
           </div>
         </div>
       </nav>
-    )
+    );
   }
 
   return (
@@ -83,19 +92,44 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"} variant="ghost" size="sm" onClick={toggleTheme} className="p-2">
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            <a
+              href="/Soyam_Shrestha_Resume.pdf"
+              download
+              className="hidden sm:inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition"
+            >
+              Download Resume
+            </a>
+
+            <Button
+              aria-label={
+                isDark ? "Switch to light mode" : "Switch to dark mode"
+              }
+              variant="ghost"
+              size="sm"
+              onClick={toggleTheme}
+              className="p-2"
+            >
+              {isDark ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
             </Button>
 
             {/* Mobile Menu Button */}
             <Button
-              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
               variant="ghost"
               size="sm"
               className="md:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isMobileMenuOpen ? (
+                <X className="h-4 w-4" />
+              ) : (
+                <Menu className="h-4 w-4" />
+              )}
             </Button>
           </div>
         </div>
@@ -114,10 +148,17 @@ export function Navigation() {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="/Soyam_Shrestha_Resume.pdf"
+                download
+                className="sm:hidden inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition"
+              >
+                Download Resume
+              </a>
             </div>
           </div>
         )}
       </div>
     </nav>
-  )
+  );
 }
