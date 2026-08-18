@@ -54,8 +54,18 @@ const projects = [
       "A modern, responsive portfolio website built with React and Next.js. Features smooth animations, dark mode support, interactive contact form, and showcases my development skills with clean design and optimal performance.",
     image: "/portfolio.png",
     tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/Soyamstha",
+    github: "https://github.com/Soyamstha/portfolio",
     live: "#",
+  },
+  {
+    id: 6,
+    title: "OS Design - Personal Portfolio",
+    description:
+      "A portfolio built as a desktop-style operating system windows, a taskbar, a terminal rather than a traditional scrolling page.",
+    image: "/os.png",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/Soyamstha/windows-OS-portfolio-website",
+    live: "https://soyamstha-os.vercel.app/",
   },
 ]
 

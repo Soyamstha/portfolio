@@ -50,13 +50,13 @@ export function Navigation() {
               ))}
             </div>
             <div className="flex items-center space-x-4">
-              <a
-                href="/Soyam_Shrestha_Resume.pdf"
-                download
-                className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition"
-              >
-                Download Resume
-              </a>
+               <a
+              href="/Soyam_Shrestha_Resume.pdf"
+              download
+              className="hidden sm:inline-flex items-center rounded-lg bg-black px-3 py-1 text-white font-medium hover:bg-black/80 transition"
+            >
+              Download Resume
+            </a>
               <Button variant="ghost" size="sm" className="p-2">
                 <Moon className="h-4 w-4" />
               </Button>
@@ -95,7 +95,7 @@ export function Navigation() {
             <a
               href="/Soyam_Shrestha_Resume.pdf"
               download
-              className="hidden sm:inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition"
+              className="hidden sm:inline-flex items-center rounded-lg bg-black px-3 py-1 text-white font-medium hover:bg-black/80 transition"
             >
               Download Resume
             </a>
@@ -151,7 +151,7 @@ export function Navigation() {
               <a
                 href="/Soyam_Shrestha_Resume.pdf"
                 download
-                className="sm:hidden inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition"
+                className="sm:hidden inline-flex items-center justify-center rounded-lg bg-black py-1  text-white font-medium hover:bg-black/80 transition"
               >
                 Download Resume
               </a>
